@@ -14,6 +14,7 @@ let mix = require('laravel-mix');
 mix.js('resources/assets/js/bootstrap.js', 'public/site/js/app.js')
     .extract(['jquery', 'jquery-validation', 'bootstrap', 'popper.js'])
 //    .sass('resources/assets/sass/app.scss', 'public/site/css/app.css')
-   .sass('resources/assets/sass/front.scss', 'public/site/css/style.css');
+   .sass('resources/assets/sass/front.scss', 'public/site/css/style.css')
+   .copy('node_modules/font-awesome/fonts', 'public/fonts')
 //    .copy('node_modules/font-awesome/fonts', 'public/site/css/fonts/vendor/font-awesome');
 
